@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+    font-family: 'odin-font';
+    src: url("./fonts/Norse-Bold.otf") format('opentype');
+}
+
+.left-side {
+    background-image: url("./images/leaf.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 40%;
+    background-repeat: no-repeat;
+}
+
+.odin-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    top: 280px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.odin {
+    font-family: 'odin-font';
+    font-size: 12rem;
+    color: white;
+}
+
+.right-side {
+    background-color: #F5F5F5;
+}
+
+.random-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 140px 200px 60px 50px;
+}
+
+.you-know {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form {
+    padding: 20px 0px 20px 50px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.form-title {
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 24px;
+}
+
+.form-row {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.form-row > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    letter-spacing: 2px;
+    gap: 6px;
+}
+
+input {
+    font-size: 18px;
+    padding: 8px 12px;
+    border-color: #E5E7EB;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 50px;
+    background-color: #C43A19;
+    color: white;
+    font-weight: 800px;
+    font-size: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.already {
+    font-size: 20px;
+    padding: 50px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #C43A19;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+input[type='password']:invalid {
+    border-color: red;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
